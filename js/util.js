@@ -12,7 +12,7 @@ function ajax(url, method, callback) {
 
 
 function vote(vereadorId, prefeitoId) {
-  ajax(`3.83.161.213:8080/vote/${vereadorId}/${prefeitoId}`,
+  ajax(`http://3.83.161.213/vote/${vereadorId}/${prefeitoId}`,
     "POST",
     (res => {
       console.log("response", res);
